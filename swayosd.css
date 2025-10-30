@@ -1,0 +1,71 @@
+@define-color background-color #1e1e2e;
+@define-color border-color     #cba6f7;
+@define-color label            #cdd6f4;
+@define-color image            #cdd6f4;
+@define-color progress        #9399b2;
+
+window {
+  background-color: transparent;
+  border: none;
+  border-radius: 0;
+  padding: 0;
+  box-shadow: none;
+}
+
+.osd,
+#osd,
+osd {
+  background-color: alpha(@background-color, 0.9);
+  border: 2px solid @border-color;
+  border-radius: 10px;
+  box-shadow: none;
+}
+
+image {
+  color: @image;
+  -gtk-icon-size: 48px;
+  margin: 0 16px 0 0;
+}
+
+label {
+  color: @label;
+  font-size: 14px;
+  font-weight: 500;
+  margin: 0;
+}
+
+progressbar {
+  border-radius: 0;
+  padding-bottom: 8px;
+  margin: 8px 0 0 0;
+  min-height: 16px;
+  min-width: 200px;
+}
+
+progressbar > trough {
+  background: alpha(@border-color, 0.15);
+  border-radius: 0;
+  border: none;
+  min-height: 16px;
+}
+
+progressbar > trough > progress {
+  background: linear-gradient(90deg, @progress, #cdd6f4);
+  border-radius: 0;
+  border: none;
+  min-height: 16px;
+}
+
+progressbar trough {
+  background: alpha(@border-color, 0.15);
+  border-radius: 12px;
+  border: none;
+  min-height: 16px;
+}
+
+progressbar progress {
+  background: linear-gradient(90deg, @progress, #cdd6f4);
+  border-radius: 0;
+  border: none;
+  min-height: 16px;
+}
