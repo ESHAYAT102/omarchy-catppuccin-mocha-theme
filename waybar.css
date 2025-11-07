@@ -4,14 +4,32 @@
 @define-color surface         #404040;
 @define-color inactive        #404040;
 
-@define-color accent_orange   #e65c5c;
-@define-color accent_green    #9ece6a;
-@define-color accent_blue     #7aa2f7;
-@define-color accent_critical #e65c5c;
-
-#waybar {
-  background-color: @waybarBg;
+@define-color accent_orange   #fab387;
+@define-color accent_green    #a6e3a1;
+@define-color accent_blue     #89b4fa;
+@define-color accent_critical #f38ba8;
+/* 
+.modules-left {
+  background-color: #031c00;
+  border: 2px solid #89b4fa;
+  color: #89b4fa;
 }
+
+.modules-center {
+  background-color: #031c00;
+  border: 2px solid #cba6f7;
+  color: #cba6f7;
+}
+
+.modules-right {
+  background-color: #031c00;
+  border: 2px solid #fab387;
+  color: #fab387;
+}
+
+#workspaces * {
+  color: #cba6f7;
+} */
 
 #battery.charging,
 #battery.plugged {
@@ -42,4 +60,8 @@ tooltip {
 
 tooltip label {
   color: @foreground;
+}
+
+#custom-screenrecording-indicator.active {
+  color: #cba6f7;
 }
