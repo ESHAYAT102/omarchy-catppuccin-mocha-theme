@@ -50,7 +50,7 @@ progressbar > trough {
 }
 
 progressbar > trough > progress {
-  background: linear-gradient(90deg, @progress, #cdd6f4);
+  background: #cdd6f4;
   border-radius: 0;
   border: none;
   min-height: 16px;
