@@ -1,8 +1,8 @@
 @define-color background rgba(0, 0, 0, 0);
 @define-color waybarBg rgba(38,38,38,0.3);
-@define-color foreground      #e6e6e6;
-@define-color surface         #404040;
-@define-color inactive        #404040;
+@define-color foreground      #cdd6f4;
+@define-color surface         #1e1e2e;
+@define-color inactive        #1e1e2e;
 
 @define-color accent_orange   #fab387;
 @define-color accent_green    #a6e3a1;
