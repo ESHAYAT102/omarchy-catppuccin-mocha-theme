@@ -1,5 +1,5 @@
 @define-color background rgba(0, 0, 0, 0);
-@define-color waybarBg rgba(38,38,38,0.3);
+@define-color waybarBg rgb(38,38,38);
 @define-color foreground      #cdd6f4;
 @define-color surface         #1e1e2e;
 @define-color inactive        #1e1e2e;
@@ -31,6 +31,10 @@
   color: #cba6f7;
 } */
 
+#waybar {
+  background-color: @waybarBg;
+}
+
 #battery.charging,
 #battery.plugged {
   color: @accent_green;
@@ -54,7 +58,6 @@
 
 tooltip {
   border-radius: 10px;
-  background-color: #2c3245;
   border: 1px solid @inactive;
 }
 
@@ -65,3 +68,4 @@ tooltip label {
 #custom-screenrecording-indicator.active {
   color: #cba6f7;
 }
+
