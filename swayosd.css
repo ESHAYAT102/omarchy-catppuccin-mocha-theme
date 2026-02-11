@@ -1,8 +1,8 @@
 @define-color background-color #1e1e2e;
-@define-color border-color     #cba6f7;
+@define-color border-color     #cba6f766;
 @define-color label            #cdd6f4;
 @define-color image            #cdd6f4;
-@define-color progress        #9399b2;
+@define-color progress         #9399b2;
 
 window {
   background-color: transparent;
@@ -16,14 +16,13 @@ window {
 #osd,
 osd {
   background-color: alpha(@background-color, 0.9);
-  border: 2px solid @border-color;
+  border: 1px solid @border-color;
   border-radius: 10px;
-  box-shadow: none;
 }
 
 image {
   color: @image;
-  -gtk-icon-size: 48px;
+  -gtk-icon-size: 40px;
   margin: 0 16px 0 0;
 }
 
@@ -42,13 +41,6 @@ progressbar {
   min-width: 200px;
 }
 
-progressbar > trough {
-  background: alpha(@border-color, 0.15);
-  border-radius: 0;
-  border: none;
-  min-height: 16px;
-}
-
 progressbar > trough > progress {
   background: #cdd6f4;
   border-radius: 0;
@@ -64,7 +56,7 @@ progressbar trough {
 }
 
 progressbar progress {
-  background: linear-gradient(90deg, @progress, #cdd6f4);
+  background: linear-gradient(90deg, @border-color, @progress);
   border-radius: 0;
   border: none;
   min-height: 16px;
