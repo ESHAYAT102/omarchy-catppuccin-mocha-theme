@@ -62,7 +62,6 @@ window child:checked {
   background: alpha(@hover, 0.2);
   color: @border;
   font-weight: 600;
-  transform: translateX(2px);
 }
 
 window child:active {
