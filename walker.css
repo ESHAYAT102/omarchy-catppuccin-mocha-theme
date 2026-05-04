@@ -52,7 +52,7 @@ window child {
   color: @text;
   border: none;
   border-radius: 10px;
-  padding: 4px 8px;
+  padding: 0px;
   transition: all 0.2s ease;
 }
 
