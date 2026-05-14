@@ -8,7 +8,8 @@
 @define-color accent_green    #a6e3a1;
 @define-color accent_blue     #89b4fa;
 @define-color accent_critical #f38ba8;
-/* 
+
+/*
 .modules-left {
   background-color: #031c00;
   border: 2px solid #89b4fa;
